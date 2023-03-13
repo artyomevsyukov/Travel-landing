@@ -1,0 +1,13 @@
+//Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/fonts";
+@import "./base/base";
+@import "./base/mixins";
+@import "./base/media-breakpoint";
+
+// Bloks
+
+@import "./blocks/header/index";
+@import "./blocks/main/index";
+@import "./blocks/footer/index";
