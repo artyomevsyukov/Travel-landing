@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
   --accent-color: #49a144;
+  --textWhite: #fff;
 }
 
 /* Reset and base styles  */
@@ -148,6 +149,10 @@ legend {
 html,
 body {
   font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .none {
@@ -164,6 +169,13 @@ body {
   color: var(--accent-color);
 }
 
+.title1 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  color: var(--textWhite);
+}
+
 /* Для .block__body
 1. 20px минимальный размер в данном случае для paddinga который я хочу увидеть на разрешение для адаптива на 320px
 2. 50 это начальное значение и от него отнимаем минимальное
@@ -172,4 +184,33 @@ body {
 1. 20px минимальный размер в данном случае для paddinga который я хочу увидеть на разрешение для адаптива на 320px
 2. 50 это начальное значение и от него отнимаем минимальное
 3. 1200 ширина ограничевающего контейнера */
+.header {
+  background-color: rgb(19, 65, 65);
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 56px;
+  padding-bottom: 176px;
+}
+
+.nav {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__link {
+  color: var(--textWhite);
+}
 /*# sourceMappingURL=main.css.map */

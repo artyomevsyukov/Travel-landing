@@ -1,0 +1,25 @@
+.header {
+  background-color: rgb(19, 65, 65);
+}
+.container {
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 56px;
+  padding-bottom: 176px;
+}
+.logo {
+}
+.nav {
+  font-size: 18px;
+  line-height: 24px;
+}
+.nav__list {
+  display: flex;
+}
+.nav__item {
+}
+.nav__link {
+  color: var(--textWhite);
+}
