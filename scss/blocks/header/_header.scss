@@ -1,5 +1,6 @@
 .header {
-  background-color: rgb(19, 65, 65);
+  //   background-image: ;
+  background-color: cadetblue;
 }
 .container {
 }
@@ -19,7 +20,17 @@
   display: flex;
 }
 .nav__item {
+  margin-right: 82px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .nav__link {
   color: var(--textWhite);
+  font-size: 18px;
+  line-height: 24px;
+  margin-right: 82px;
+  &:last-child {
+    margin-right: 0;
+  }
 }

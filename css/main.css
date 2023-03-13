@@ -160,8 +160,7 @@ body {
 }
 
 .container {
-  max-width: 978px;
-  padding: 0 15px;
+  max-width: 1062px;
   margin: 0 auto;
 }
 
@@ -185,7 +184,7 @@ body {
 2. 50 это начальное значение и от него отнимаем минимальное
 3. 1200 ширина ограничевающего контейнера */
 .header {
-  background-color: rgb(19, 65, 65);
+  background-color: cadetblue;
 }
 
 .header-nav {
@@ -210,7 +209,20 @@ body {
   display: flex;
 }
 
+.nav__item {
+  margin-right: 82px;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+
 .nav__link {
   color: var(--textWhite);
+  font-size: 18px;
+  line-height: 24px;
+  margin-right: 82px;
+}
+.nav__link:last-child {
+  margin-right: 0;
 }
 /*# sourceMappingURL=main.css.map */
