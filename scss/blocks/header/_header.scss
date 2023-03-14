@@ -65,5 +65,44 @@
     color: var(--textWhite);
   }
   .search-form {
+    // max-width: 886px;
+    // &__info {
+    //   display: flex;
+    // }
+    &__input {
+      padding-left: 43px;
+      padding-bottom: 2px;
+      background: url("../../../img/main/intro/circl-icon.svg") no-repeat left
+        top;
+      background-size: 20px;
+      margin-right: 60px;
+      // background: transparent;
+      border-bottom: 2px solid #bfc0c5;
+      width: 297px;
+      height: 49px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: var(--textWhite);
+    }
+    &__input::placeholder {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: var(--textWhite);
+    }
+    &__input:last-child {
+      margin-right: 0;
+    }
+    &__submit {
+      background: rgba(27, 125, 255, 1);
+      padding: 0 39px;
+      font-weight: 500;
+      font-size: 24px;
+      // line-height: 29px;
+      line-height: 58px;
+
+      color: var(--textWhite);
+    }
   }
 }
