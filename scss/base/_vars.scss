@@ -1,6 +1,7 @@
 :root {
   --accent-color: #49a144;
   --textWhite: #fff;
+  --title2: #102746;
 
   //   --gap: 16px 16px;
   //   --bg-footer: #262626;
@@ -27,6 +28,8 @@
   //   --breakpoint--mobile: 320px;
 }
 $container--laptop: 1062px;
+$container--lg: 1264px;
+
 $container--tablet: 768px;
 $container--mobile: 308px;
 

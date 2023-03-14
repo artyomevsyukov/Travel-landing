@@ -2,6 +2,7 @@
 :root {
   --accent-color: #49a144;
   --textWhite: #fff;
+  --title2: #102746;
 }
 
 /* Reset and base styles  */
@@ -164,6 +165,11 @@ body {
   margin: 0 auto;
 }
 
+.container-lg {
+  max-width: 1264px;
+  margin: 0 auto;
+}
+
 .accent {
   color: var(--accent-color);
 }
@@ -173,6 +179,13 @@ body {
   font-size: 50px;
   line-height: 60px;
   color: var(--textWhite);
+}
+
+.title2 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: var(--title2);
 }
 
 /* Для .block__body
@@ -229,7 +242,7 @@ body {
 }
 
 .intro {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 263px;
   background: url("../../../img/main/intro/intro-bg.jpg") no-repeat center;
   background-size: cover;
@@ -247,14 +260,13 @@ body {
   color: var(--textWhite);
 }
 .intro .search-form__input {
-  padding-left: 43px;
-  padding-bottom: 2px;
-  background: url("../../../img/main/intro/circl-icon.svg") no-repeat left top;
+  width: 297px;
+  background: transparent url("../../../img/main/intro/circl-icon.svg") no-repeat left 3px;
   background-size: 20px;
   margin-right: 60px;
+  padding-left: 43px;
+  padding-bottom: 22px;
   border-bottom: 2px solid #bfc0c5;
-  width: 297px;
-  height: 49px;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
@@ -295,10 +307,49 @@ body {
 }
 .intro .search-form__submit {
   background: rgb(27, 125, 255);
-  padding: 0 39px;
+  padding: 21px 39px 22px;
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 58px;
+  line-height: 29px;
+  text-transform: uppercase;
   color: var(--textWhite);
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+.intro .search-form__submit:hover, .intro .search-form__submit:focus, .intro .search-form__submit:active {
+  background: rgb(2, 85, 192);
+}
+
+.benefits {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  padding-top: 89px;
+  padding-bottom: 115px;
+  border: 2px solid blue;
+}
+
+.container-lg {
+  border: 2px solid red;
+}
+
+.container {
+  border: 2px solid violet;
+}
+
+.benefits-p {
+  position: relative;
+}
+
+.benefits-wrap {
+  z-index: 111;
+  border: 2px solid green;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  top: -219px;
+  left: 0;
 }
 /*# sourceMappingURL=main.css.map */

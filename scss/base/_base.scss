@@ -19,6 +19,12 @@ body {
   // padding: 0 15px;
   margin: 0 auto;
 }
+.container-lg {
+  // 1264px
+  max-width: $container--lg;
+  // padding: 0 15px;
+  margin: 0 auto;
+}
 
 .accent {
   color: var(--accent-color);
@@ -30,6 +36,10 @@ body {
   color: var(--textWhite);
 }
 .title2 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: var(--title2);
 }
 .title3 {
 }

@@ -1,0 +1,29 @@
+.benefits {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  padding-top: 89px;
+  padding-bottom: 115px;
+  //   margin-top: 89px;
+  //   margin-bottom: 115px;
+  border: 2px solid blue;
+}
+.container-lg {
+  border: 2px solid red;
+}
+.container {
+  border: 2px solid violet;
+}
+.benefits-p {
+  position: relative;
+}
+.benefits-wrap {
+  z-index: 111;
+  border: 2px solid green;
+  background: #fff;
+  //   margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  top: -219px;
+  left: 0;
+}
