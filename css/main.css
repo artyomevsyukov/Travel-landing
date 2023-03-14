@@ -184,7 +184,11 @@ body {
 2. 50 это начальное значение и от него отнимаем минимальное
 3. 1200 ширина ограничевающего контейнера */
 .header {
-  background-color: cadetblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header-nav {
@@ -195,34 +199,51 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 56px;
-  padding-bottom: 176px;
 }
-
-.nav {
+.header-nav .nav {
   font-size: 18px;
   line-height: 24px;
 }
-
-.nav__list {
+.header-nav .nav .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.nav__item {
+.header-nav .nav .nav__item {
   margin-right: 82px;
 }
-.nav__item:last-child {
+.header-nav .nav .nav__item:last-child {
   margin-right: 0;
 }
-
-.nav__link {
+.header-nav .nav .nav__link {
   color: var(--textWhite);
   font-size: 18px;
   line-height: 24px;
   margin-right: 82px;
 }
-.nav__link:last-child {
+.header-nav .nav .nav__link:last-child {
   margin-right: 0;
+}
+.header-nav .nav .nav__link:hover, .header-nav .nav .nav__link:active, .header-nav .nav .nav__link:focus {
+  opacity: 0.75;
+}
+
+.intro {
+  height: 100vh;
+  padding-top: 263px;
+  background: url("../../../img/main/intro/intro-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+.intro__title {
+  max-width: 619px;
+  margin-bottom: 22px;
+}
+.intro__text {
+  max-width: 546px;
+  margin-bottom: 59px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--textWhite);
 }
 /*# sourceMappingURL=main.css.map */
