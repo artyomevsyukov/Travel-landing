@@ -195,6 +195,22 @@ body {
   line-height: 24px;
 }
 
+.base__link {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006dfe;
+  display: inline-block;
+  padding-right: 69px;
+  background: url(../../../img/base/arrow.svg) no-repeat 90% center;
+  -webkit-transition: 0.2s ease-in all;
+  transition: 0.2s ease-in all;
+}
+.base__link:hover, .base__link:focus {
+  background: url(../../../img/base/arrow.svg) no-repeat right center;
+}
+
 /* Для .block__body
 1. 20px минимальный размер в данном случае для paddinga который я хочу увидеть на разрешение для адаптива на 320px
 2. 50 это начальное значение и от него отнимаем минимальное
@@ -377,19 +393,54 @@ body {
 .benefits-cards .benefit-card .card__desc {
   margin-bottom: 39px;
 }
-.benefits-cards .benefit-card .card__link {
-  position: relative;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #006dfe;
-  display: inline-block;
-  padding-right: 69px;
-  background: url(../../../img/main/benefits/arrow.svg) no-repeat 90% center;
-  -webkit-transition: 0.2s ease-in all;
-  transition: 0.2s ease-in all;
+
+.inspired {
+  margin-bottom: 131px;
 }
-.benefits-cards .benefit-card .card__link:hover, .benefits-cards .benefit-card .card__link:focus {
-  background: url(../../../img/main/benefits/arrow.svg) no-repeat right center;
+
+.inspired-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 46px;
+}
+
+.inspired-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+.inspired-cards .item-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+}
+.inspired-cards .item-2 {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7/13;
+}
+.inspired-cards .item-3 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+.inspired-cards .item-4 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5/9;
+}
+.inspired-cards .item-5 {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-column: 9/13;
 }
 /*# sourceMappingURL=main.css.map */

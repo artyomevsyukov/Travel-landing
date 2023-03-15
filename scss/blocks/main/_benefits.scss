@@ -40,32 +40,15 @@
     .card__desc {
       margin-bottom: 39px;
     }
-    .card__link {
-      position: relative;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      color: #006dfe;
 
-      display: inline-block;
-      padding-right: 69px;
-      background: url(../../../img/main/benefits/arrow.svg) no-repeat 90% center;
-      transition: 0.2s ease-in all;
-
-      &:hover,
-      &:focus {
-        background: url(../../../img/main/benefits/arrow.svg) no-repeat right
-          center;
-      }
-      // &::after {
-      //   content: "";
-      //   position: absolute;
-      //   width: 33px;
-      //   height: 8px;
-      //   top: 6px;
-      //   right: -33px-26px;
-      //   background-image: url(../../../img/main/benefits/arrow.svg);
-      // }
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 33px;
+    //   height: 8px;
+    //   top: 6px;
+    //   right: -33px-26px;
+    //   background-image: url(../../../img/main/benefits/arrow.svg);
+    // }
   }
 }
