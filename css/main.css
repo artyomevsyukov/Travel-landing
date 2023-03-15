@@ -154,6 +154,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: #000000;
 }
 
 .none {
@@ -175,17 +176,23 @@ body {
 }
 
 .title1 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 50px;
   line-height: 60px;
   color: var(--textWhite);
 }
 
 .title2 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 35px;
   line-height: 42px;
   color: var(--title2);
+}
+
+.title3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 /* Для .block__body
@@ -323,33 +330,66 @@ body {
 }
 
 .benefits {
-  margin: 0 auto;
-  width: 100%;
-  position: relative;
-  padding-top: 89px;
-  padding-bottom: 115px;
-  border: 2px solid blue;
-}
-
-.container-lg {
-  border: 2px solid red;
-}
-
-.container {
-  border: 2px solid violet;
-}
-
-.benefits-p {
-  position: relative;
+  margin-bottom: 131px;
 }
 
 .benefits-wrap {
-  z-index: 111;
-  border: 2px solid green;
-  background: #fff;
-  position: absolute;
+  position: relative;
+  max-width: 1262px;
+  background-color: #fff;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+          box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+}
+
+.benefits__title {
   width: 100%;
-  top: -219px;
+  padding: 93px 100px 88px 100px;
+  position: absolute;
+  top: 0;
   left: 0;
+  color: #102746;
+  -webkit-transform: translateY(-99%);
+          transform: translateY(-99%);
+  background-color: #fff;
+}
+
+.benefits-cards {
+  display: -ms-grid;
+  display: grid;
+  padding: 32px 100px 112px;
+  -ms-grid-columns: 1fr 55px 1fr 55px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 55px;
+}
+.benefits-cards .benefit-card {
+  -ms-grid-column-span: 1;
+  grid-column: span 1;
+  max-width: 317px;
+}
+.benefits-cards .benefit-card .card__img {
+  max-width: 66px;
+  margin-bottom: 37px;
+}
+.benefits-cards .benefit-card .card__title {
+  margin-bottom: 26px;
+}
+.benefits-cards .benefit-card .card__desc {
+  margin-bottom: 39px;
+}
+.benefits-cards .benefit-card .card__link {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006dfe;
+  display: inline-block;
+  padding-right: 69px;
+  background: url(../../../img/main/benefits/arrow.svg) no-repeat 90% center;
+  -webkit-transition: 0.2s ease-in all;
+  transition: 0.2s ease-in all;
+}
+.benefits-cards .benefit-card .card__link:hover, .benefits-cards .benefit-card .card__link:focus {
+  background: url(../../../img/main/benefits/arrow.svg) no-repeat right center;
 }
 /*# sourceMappingURL=main.css.map */
