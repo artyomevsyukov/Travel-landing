@@ -2,7 +2,7 @@
 :root {
   --accent-color: #49a144;
   --textWhite: #fff;
-  --title2: #102746;
+  --titleBlue: #102746;
 }
 
 /* Reset and base styles  */
@@ -186,10 +186,17 @@ body {
   font-weight: 600;
   font-size: 35px;
   line-height: 42px;
-  color: var(--title2);
+  color: var(--titleBlue);
 }
 
 .title3 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--titleBlue);
+}
+
+.title4 {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
@@ -497,5 +504,39 @@ body {
 .inspireds-cards .inspired-card__item--sm {
   -ms-grid-column-span: 2;
   grid-column: span 2;
+}
+
+.tours {
+  margin-bottom: 139px;
+}
+
+.tours__item {
+  margin-right: 47px;
+  margin-bottom: 77px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 108px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 108px;
+}
+.tours__item:nth-child(2n) {
+  margin-right: 0;
+  margin-left: 47px;
+}
+
+.tour__info .tour__title {
+  margin-top: 26px;
+  margin-bottom: 85px;
+}
+.tour__info .tour__desc {
+  margin-bottom: 58px;
+  max-width: 519px;
+  max-height: 152px;
+  overflow: hidden;
+  color: var(--titleBlue);
+  overflow: hidden;
+}
+.tour__info .tour__link {
+  margin-bottom: 49px;
 }
 /*# sourceMappingURL=main.css.map */
