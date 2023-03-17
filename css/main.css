@@ -284,6 +284,7 @@ body {
   padding-top: 263px;
   background: url("../../../img/main/intro/intro-bg.jpg") no-repeat center;
   background-size: cover;
+  padding-bottom: 372px;
 }
 .intro__title {
   max-width: 619px;
@@ -430,36 +431,71 @@ body {
   margin-right: 15px;
 }
 
-.inspired-cards {
+.inspireds-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
-  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(6, 1fr);
   gap: 10px;
 }
-.inspired-cards .item-1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-column: 1/7;
+.inspireds-cards .inspired-card {
+  position: relative;
+  overflow: hidden;
 }
-.inspired-cards .item-2 {
-  -ms-grid-column: 7;
-  -ms-grid-column-span: 6;
-  grid-column: 7/13;
+.inspireds-cards .inspired-card::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 24, 36, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
-.inspired-cards .item-3 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1/5;
+.inspireds-cards .inspired-card:hover .inspired-card__img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
-.inspired-cards .item-4 {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 4;
-  grid-column: 5/9;
+.inspireds-cards .inspired-card .inspired-card__img {
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
-.inspired-cards .item-5 {
-  -ms-grid-column: 9;
-  -ms-grid-column-span: 4;
-  grid-column: 9/13;
+.inspireds-cards .inspired-card .inspired-card__img--lg {
+  height: 354px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.inspireds-cards .inspired-card .inspired-card__img--sm {
+  height: 283px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.inspireds-cards .inspired-card .inspired-card__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  color: var(--textWhite);
+  position: absolute;
+  bottom: 27px;
+  left: 30px;
+  z-index: 3;
+}
+.inspireds-cards .inspired-card .inspired-card__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+.inspireds-cards .inspired-card__item--lg {
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
+}
+.inspireds-cards .inspired-card__item--sm {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
 }
 /*# sourceMappingURL=main.css.map */
