@@ -3,6 +3,7 @@
   --accent-color: #49a144;
   --textWhite: #fff;
   --titleBlue: #102746;
+  --buttonBlue: #006dfe;
 }
 
 /* Reset and base styles  */
@@ -537,5 +538,55 @@ body {
   overflow: hidden;
   color: var(--titleBlue);
   overflow: hidden;
+}
+.top-places {
+  margin-bottom: 144px;
+}
+
+.top-places__title {
+  margin-bottom: 54px;
+}
+
+.places-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 52px 1fr 52px 1fr 52px 1fr 52px 1fr 52px 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 58px 52px;
+}
+
+.place-card {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+
+.place-card__pic {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.places-card__title {
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+  z-index: 3;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--textWhite);
+}
+
+.place-card__desc {
+  margin-bottom: 31px;
+  max-width: 391px;
+}
+
+.place-card__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 12px 19px;
+  background-color: var(--buttonBlue);
+  color: var(--textWhite);
 }
 /*# sourceMappingURL=main.css.map */
