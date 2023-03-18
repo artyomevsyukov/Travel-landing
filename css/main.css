@@ -588,6 +588,11 @@ body {
   padding: 12px 19px;
   background-color: var(--buttonBlue);
   color: var(--textWhite);
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+.place-card__link:hover, .place-card__link:focus, .place-card__link:active {
+  background: rgb(2, 85, 192);
 }
 
 .place-card__stats {

@@ -44,6 +44,13 @@
   padding: 12px 19px;
   background-color: var(--buttonBlue);
   color: var(--textWhite);
+  transition: all ease-in 0.3s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: rgb(2, 85, 192);
+  }
 }
 .place-card__stats {
   display: flex;
