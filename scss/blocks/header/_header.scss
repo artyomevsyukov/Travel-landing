@@ -9,7 +9,7 @@
   z-index: 999;
 }
 .header_active {
-  background: #0e1d28;
+  background: var(--bgColor);
 }
 .header-nav {
   display: flex;

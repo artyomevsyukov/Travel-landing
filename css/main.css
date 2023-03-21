@@ -4,6 +4,7 @@
   --textWhite: #fff;
   --titleBlue: #102746;
   --buttonBlue: #006dfe;
+  --bgColor: #0e1d28;
 }
 
 /* Reset and base styles  */
@@ -255,7 +256,7 @@ body {
 }
 
 .header_active {
-  background: #0e1d28;
+  background: var(--bgColor);
 }
 
 .header-nav {
@@ -665,5 +666,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.footer {
+  background: var(--bgColor);
+  padding: 199px 0;
 }
 /*# sourceMappingURL=main.css.map */
