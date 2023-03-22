@@ -27,6 +27,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 55px;
   .benefit-card {
+    display: flex;
+    flex-direction: column;
     grid-column: span 1;
     max-width: 317px;
 
@@ -40,7 +42,11 @@
     .card__desc {
       margin-bottom: 39px;
     }
-
+    .benefit-card__link {
+      width: 170px;
+      // width: 100%;
+      margin: auto 0 0 0;
+    }
     // &::after {
     //   content: "";
     //   position: absolute;

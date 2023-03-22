@@ -510,6 +510,13 @@ body {
   gap: 55px;
 }
 .benefits-cards .benefit-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-grid-column-span: 1;
   grid-column: span 1;
   max-width: 317px;
@@ -523,6 +530,10 @@ body {
 }
 .benefits-cards .benefit-card .card__desc {
   margin-bottom: 39px;
+}
+.benefits-cards .benefit-card .benefit-card__link {
+  width: 170px;
+  margin: auto 0 0 0;
 }
 
 .inspired {
@@ -766,6 +777,11 @@ body {
   height: 100%;
 }
 
+@media (max-width: 960px) {
+  .search-form__input {
+    margin-bottom: 25px;
+  }
+}
 .footer {
   background: var(--bgColor);
   padding: 199px 0;
