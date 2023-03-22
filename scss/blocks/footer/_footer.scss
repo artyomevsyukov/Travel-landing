@@ -3,8 +3,34 @@
   padding: 199px 0;
 }
 .footer-wrap {
+  display: flex;
+  justify-content: space-between;
 }
+
 .footer__logo {
+  width: 50%;
+  // flex-grow: 1;
 }
 .footer__img {
+}
+.footer-nav {
+  width: 50%;
+  // flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-menu {
+}
+.footer-menu__title {
+  color: var(--textWhite);
+}
+.fooer-menu__item {
+}
+.footer-menu__link {
+  color: var(--textWhite);
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.75;
+  }
 }
