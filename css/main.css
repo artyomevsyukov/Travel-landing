@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* этот сайт защищен авторским правом
+Версия: 1.0.2. */
 :root {
   --accent-color: #49a144;
   --textWhite: #fff;
@@ -616,17 +618,19 @@ body {
   width: 100%;
   z-index: 5;
 }
-.inspireds-cards .inspired-card__item--lg {
+
+.inspired-card__item--lg {
   -ms-grid-column-span: 3;
   grid-column: span 3;
 }
-.inspireds-cards .inspired-card__item--sm {
+
+.inspired-card__item--sm {
   -ms-grid-column-span: 2;
   grid-column: span 2;
 }
 
 .tours {
-  margin-bottom: 139px;
+  margin-bottom: 80px;
 }
 
 .tours__item {
@@ -782,6 +786,87 @@ body {
     margin-bottom: 25px;
   }
 }
+@media (max-width: 769px) {
+  .search-form .search-form__input {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 960px) {
+  .benefits__title {
+    padding: 55px 15px;
+  }
+  .benefits-cards {
+    display: -ms-grid;
+    display: grid;
+    padding: 32px 15px 0;
+    gap: 35px;
+  }
+  .benefits-wrap {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+@media (max-width: 769px) {
+  .benefits-cards {
+    padding: 32px 100px 112px;
+    gap: 55px;
+  }
+  .benefits-cards .benefit-card {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+  }
+}
+@media (max-width: 960px) {
+  .inspired-card__item--lg {
+    -ms-grid-column-span: 6;
+    grid-column: span 6;
+  }
+  .inspired-card__item--sm {
+    -ms-grid-column-span: 6;
+    grid-column: span 6;
+  }
+}
+@media (max-width: 960px) {
+  .tours {
+    margin-bottom: 80px;
+  }
+  .tours__item {
+    margin-right: 0;
+    gap: 0 35px;
+  }
+  .tours__item:nth-child(2n) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .tour__info .tour__title {
+    margin-bottom: 25px;
+  }
+  .tour__info .tour__desc {
+    margin-bottom: 28px;
+  }
+}
+@media (max-width: 960px) {
+  .top-places {
+    margin-bottom: 80px;
+  }
+  .places-cards {
+    gap: 35px 25px;
+  }
+  .place-card {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+  }
+  .place-card__pic {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 769px) {
+  .place-card {
+    -ms-grid-column-span: 6;
+    grid-column: span 6;
+  }
+}
 .footer {
   background: var(--bgColor);
   padding: 199px 0;
@@ -819,5 +904,11 @@ body {
 }
 .footer-menu__link:hover, .footer-menu__link:active, .footer-menu__link:focus {
   opacity: 0.75;
+}
+
+@media (max-width: 960px) {
+  .footer {
+    padding: 60px 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

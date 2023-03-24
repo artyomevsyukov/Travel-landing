@@ -1,0 +1,27 @@
+@media (max-width: 960px) {
+  .tours {
+    margin-bottom: 80px;
+  }
+  .tours__item {
+    margin-right: 0;
+    gap: 0 35px;
+    &:nth-child(2n) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  .tour__info {
+    .tour__title {
+      // margin-top: 26px;
+      margin-bottom: 25px;
+    }
+    .tour__desc {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+@include tablet {
+}
+@include mobile {
+}

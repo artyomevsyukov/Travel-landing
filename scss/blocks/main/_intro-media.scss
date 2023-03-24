@@ -1,0 +1,19 @@
+@media (max-width: 960px) {
+  .search-form__input {
+    margin-bottom: 25px;
+  }
+}
+
+@include tablet {
+  .intro {
+    // min-height: 50vh;
+  }
+  .search-form {
+    .search-form__input {
+      width: 100%;
+      margin-right: 0px;
+    }
+  }
+}
+@include mobile {
+}

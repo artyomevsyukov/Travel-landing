@@ -66,12 +66,11 @@
       z-index: 5;
     }
   }
+}
+.inspired-card__item--lg {
+  grid-column: span 3;
+}
 
-  .inspired-card__item--lg {
-    grid-column: span 3;
-  }
-
-  .inspired-card__item--sm {
-    grid-column: span 2;
-  }
+.inspired-card__item--sm {
+  grid-column: span 2;
 }

@@ -1,0 +1,26 @@
+@media (max-width: 960px) {
+  .benefits__title {
+    padding: 55px 15px;
+  }
+  .benefits-cards {
+    display: grid;
+    padding: 32px 15px 0;
+    gap: 35px;
+  }
+  .benefits-wrap {
+    box-shadow: none;
+  }
+}
+
+@include tablet {
+  .benefits-cards {
+    padding: 32px 100px 112px;
+
+    gap: 55px;
+    .benefit-card {
+      grid-column: span 3;
+    }
+  }
+}
+@include mobile {
+}

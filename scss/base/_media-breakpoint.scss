@@ -20,18 +20,18 @@
   }
 }
 //===============================================================
-// @mixin laptop($breakpoint--laptop) {
+// @mixin laptop(max-width:$breakpoint--laptop) {
 //   @media (max-width: #{$breakpoint--laptop}) {
 //     @content;
 //   }
 // }
 
-// @mixin tablet($breakpoint--tablet) {
+// @mixin tablet(max-width:$breakpoint--tablet) {
 //   @media (max-width: #{$breakpoint--tablet}) {
 //     @content;
 //   }
 // }
-// @mixin mobile($breakpoint--mobile) {
+// @mixin mobile(max-width:$breakpoint--mobile) {
 //   @media (max-width: #{$breakpoint--mobile}) {
 //     @content;
 //   }

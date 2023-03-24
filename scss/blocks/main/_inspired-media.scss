@@ -1,0 +1,14 @@
+@media (max-width: 960px) {
+  .inspired-card__item--lg {
+    grid-column: span 6;
+  }
+
+  .inspired-card__item--sm {
+    grid-column: span 6;
+  }
+}
+
+@include tablet {
+}
+@include mobile {
+}

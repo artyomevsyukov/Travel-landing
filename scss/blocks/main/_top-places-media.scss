@@ -1,0 +1,22 @@
+@media (max-width: 960px) {
+  .top-places {
+    margin-bottom: 80px;
+  }
+  .places-cards {
+    gap: 35px 25px;
+  }
+  .place-card {
+    grid-column: span 3;
+  }
+  .place-card__pic {
+    margin-bottom: 25px;
+  }
+}
+
+@include tablet {
+  .place-card {
+    grid-column: span 6;
+  }
+}
+@include mobile {
+}
