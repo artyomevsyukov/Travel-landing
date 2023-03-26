@@ -16,6 +16,7 @@
 .footer-nav {
   width: 50%;
   // flex-grow: 1;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }
@@ -24,7 +25,7 @@
 .footer-menu__title {
   color: var(--textWhite);
 }
-.fooer-menu__item {
+.footer-menu__item {
 }
 .footer-menu__link {
   color: var(--textWhite);

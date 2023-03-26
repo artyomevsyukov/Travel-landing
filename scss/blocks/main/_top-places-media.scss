@@ -18,12 +18,39 @@
   .place-card__pic {
     margin-bottom: 25px;
   }
+  .place-card__stats {
+    max-width: 386px;
+  }
 }
 
 @include tablet {
+  .top-places__title {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 253px;
+      height: 3px;
+      left: auto;
+      bottom: 0;
+      background-color: #006dfe;
+    }
+  }
+  // .title-line {
+  //   &::after {
+  //     left: 0;
+  //   }
+  // }
+
   .place-card {
     grid-column: span 6;
+    margin: 0 auto;
   }
 }
+
 @include mobile {
 }
