@@ -630,7 +630,7 @@ body {
 }
 
 .tours {
-  margin-bottom: 80px;
+  margin-bottom: 139px;
 }
 
 .tours__item {
@@ -678,13 +678,6 @@ body {
 }
 
 .place-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-grid-column-span: 2;
   grid-column: span 2;
 }
@@ -808,6 +801,9 @@ body {
   }
 }
 @media (max-width: 769px) {
+  .benefits {
+    margin-bottom: 0;
+  }
   .benefits-cards {
     padding: 32px 100px 112px;
     gap: 55px;
@@ -822,9 +818,46 @@ body {
     -ms-grid-column-span: 6;
     grid-column: span 6;
   }
+  .inspireds-cards {
+    gap: 15px;
+  }
   .inspired-card__item--sm {
     -ms-grid-column-span: 6;
     grid-column: span 6;
+  }
+}
+@media (max-width: 769px) {
+  .inspired {
+    margin-bottom: 50px;
+  }
+  .inspired__link {
+    min-width: 165px;
+  }
+  .inspired-row {
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+}
+@media (max-width: 769px) and (max-width: 520px) {
+  .inspired-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .title-line {
+    margin-bottom: 20px;
+  }
+  .inspired__link {
+    width: 100%;
+    background: url(../../../img/base/arrow.svg) no-repeat 95% center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 @media (max-width: 960px) {
@@ -846,12 +879,26 @@ body {
     margin-bottom: 28px;
   }
 }
+@media (max-width: 769px) {
+  .tour__pic,
+.tour__info {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+  .tour__pic {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+  }
+  .tours__item {
+    margin-bottom: 40px;
+  }
+  .tours__item .tour__link {
+    margin-bottom: 25px;
+  }
+}
 @media (max-width: 960px) {
   .top-places {
     margin-bottom: 80px;
-  }
-  .places-cards {
-    gap: 35px 25px;
   }
   .place-card {
     -ms-grid-column-span: 3;

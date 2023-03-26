@@ -1,9 +1,16 @@
+@media (max-width: 1920px) {
+  // .places-cards {
+  //   gap: calc(40px + (58 - 40) * ((100vw - 320px) / (1224 - 320)))
+  //     calc(25px + (52 - 25) * ((100vw - 320px) / (1224 - 320)));
+  // }
+}
+
 @media (max-width: 960px) {
   .top-places {
     margin-bottom: 80px;
   }
   .places-cards {
-    gap: 35px 25px;
+    // gap: 35px 25px;
   }
   .place-card {
     grid-column: span 3;

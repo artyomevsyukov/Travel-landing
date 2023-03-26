@@ -2,6 +2,9 @@
   .inspired-card__item--lg {
     grid-column: span 6;
   }
+  .inspireds-cards {
+    gap: 15px;
+  }
 
   .inspired-card__item--sm {
     grid-column: span 6;
@@ -9,6 +12,30 @@
 }
 
 @include tablet {
+  .inspired {
+    margin-bottom: 50px;
+  }
+  .inspired__link {
+    min-width: 165px;
+  }
+  .inspired-row {
+    justify-content: baseline;
+  }
+  @media (max-width: 520px) {
+    .inspired-row {
+      flex-direction: column;
+    }
+    .title-line {
+      margin-bottom: 20px;
+    }
+    .inspired__link {
+      width: 100%;
+      background: url(../../../img/base/arrow.svg) no-repeat 95% center;
+
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
 }
 @include mobile {
 }

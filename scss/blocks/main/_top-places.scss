@@ -10,10 +10,11 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 58px 52px;
+  // margin-bottom: calc(20px + (25- 20) * ((100vw-600px) / (1264 - 600)));
 }
 .place-card {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   grid-column: span 2;
 }
 .place-card__pic {
@@ -21,8 +22,10 @@
   margin-bottom: 45px;
 }
 .place-card__item {
+  // position: relative;
 }
 .place-card__img {
+  // position: relative;
 }
 .places-card__title {
   position: absolute;

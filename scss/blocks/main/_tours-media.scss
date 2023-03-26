@@ -10,6 +10,14 @@
       margin-left: 0;
     }
   }
+  // .tour__pic {
+  //   grid-row-start: 3;
+  // &:nth-child(2n-1) {
+  //   grid-row-start: 3;
+  // }
+  // .tour__img {
+  // }
+  // }
   .tour__info {
     .tour__title {
       // margin-top: 26px;
@@ -22,6 +30,20 @@
 }
 
 @include tablet {
+  .tour__pic,
+  .tour__info {
+    grid-column: span 2;
+  }
+  .tour__pic {
+    grid-row-start: 3;
+  }
+  .tours__item {
+    // grid-template-columns: 1fr;
+    margin-bottom: 40px;
+    .tour__link {
+      margin-bottom: 25px;
+    }
+  }
 }
 @include mobile {
 }
