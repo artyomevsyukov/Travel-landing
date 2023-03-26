@@ -744,13 +744,13 @@ body {
 .place-card__like-value {
   padding-right: 20px;
   margin-right: 14px;
-  background: url(../../../img/main/top-places/likes.svg) no-repeat right center;
+  background: url("../img/main/top-places/likes.svg") no-repeat right center;
 }
 
 .place-card__comments-value {
   padding-right: 24px;
   margin-right: 25px;
-  background: url(../../../img/main/top-places/comments.svg) no-repeat right center;
+  background: url("../img/main/top-places/comments.svg") no-repeat right center;
 }
 
 .videos {
