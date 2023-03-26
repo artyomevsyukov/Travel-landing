@@ -231,12 +231,12 @@ body {
   color: #006dfe;
   display: inline-block;
   padding-right: 69px;
-  background: url(./img/base/arrow.svg) no-repeat 90% center;
+  background: url(../img/base/arrow.svg) no-repeat 90% center;
   -webkit-transition: 0.2s ease-in all;
   transition: 0.2s ease-in all;
 }
 .base__link:hover, .base__link:focus {
-  background: url(./img/base/arrow.svg) no-repeat right center;
+  background: url(../img/base/arrow.svg) no-repeat right center;
 }
 
 /* Для .block__body
