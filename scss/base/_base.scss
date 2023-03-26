@@ -79,12 +79,12 @@ body {
   display: inline-block;
   padding-right: 69px;
   // background: url(../../../img/base/arrow.svg) no-repeat 90% center;
-  background: url(../img/base/arrow.svg) no-repeat 90% center;
+  background: url("../img/base/arrow.svg") no-repeat 90% center;
   transition: 0.2s ease-in all;
 
   &:hover,
   &:focus {
     // background: url(../../../img/base/arrow.svg) no-repeat right center;
-    background: url(../img/base/arrow.svg) no-repeat right center;
+    background: url("../img/base/arrow.svg") no-repeat right center;
   }
 }
