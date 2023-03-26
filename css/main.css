@@ -231,12 +231,12 @@ body {
   color: #006dfe;
   display: inline-block;
   padding-right: 69px;
-  background: url(../../../img/base/arrow.svg) no-repeat 90% center;
+  background: url(./img/base/arrow.svg) no-repeat 90% center;
   -webkit-transition: 0.2s ease-in all;
   transition: 0.2s ease-in all;
 }
 .base__link:hover, .base__link:focus {
-  background: url(../../../img/base/arrow.svg) no-repeat right center;
+  background: url(./img/base/arrow.svg) no-repeat right center;
 }
 
 /* Для .block__body
@@ -399,7 +399,7 @@ body {
 .intro {
   min-height: 100vh;
   padding-top: 263px;
-  background: url("/img/main/intro/intro-bg.jpg") no-repeat center;
+  background: url("../img/main/intro/intro-bg.jpg") no-repeat center;
   background-size: cover;
   padding-bottom: 372px;
 }
@@ -417,7 +417,7 @@ body {
 }
 .intro .search-form__input {
   width: 297px;
-  background: transparent url("/img/main/intro/circl-icon.svg") no-repeat left 3px;
+  background: transparent url("../img/main/intro/circl-icon.svg") no-repeat left 3px;
   background-size: 20px;
   margin-right: 60px;
   padding-left: 43px;
