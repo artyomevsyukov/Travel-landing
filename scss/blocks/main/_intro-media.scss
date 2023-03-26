@@ -1,3 +1,14 @@
+@media (min-width: 1921px) {
+  .intro {
+    min-height: 45vh;
+  }
+}
+@media (min-height: 1081px) {
+  .intro {
+    min-height: 45vh;
+  }
+}
+
 @media (max-width: 960px) {
   .search-form__input {
     margin-bottom: 25px;
