@@ -50,12 +50,12 @@
     .tour__link {
       margin-bottom: 25px;
       width: 100%;
-      background: url(../../../img/base/arrow.svg) no-repeat 95% center;
+      background: url("../img/base/arrow.svg") no-repeat 95% center;
       display: flex;
       justify-content: flex-end;
       &:hover,
       &:focus {
-        background: url(../../../img/base/arrow.svg) no-repeat right center;
+        background: url("../img/base/arrow.svg") no-repeat right center;
       }
     }
   }

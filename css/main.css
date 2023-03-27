@@ -679,6 +679,13 @@ body {
 }
 
 .place-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-grid-column-span: 2;
   grid-column: span 2;
 }
@@ -867,7 +874,7 @@ body {
   }
   .inspired__link {
     width: 100%;
-    background: url(../../../img/base/arrow.svg) no-repeat 95% center;
+    background: url("../img/base/arrow.svg") no-repeat 95% center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -921,7 +928,7 @@ body {
   .tours__item .tour__link {
     margin-bottom: 25px;
     width: 100%;
-    background: url(../../../img/base/arrow.svg) no-repeat 95% center;
+    background: url("../img/base/arrow.svg") no-repeat 95% center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -930,7 +937,7 @@ body {
             justify-content: flex-end;
   }
   .tours__item .tour__link:hover, .tours__item .tour__link:focus {
-    background: url(../../../img/base/arrow.svg) no-repeat right center;
+    background: url("../img/base/arrow.svg") no-repeat right center;
   }
 }
 @media (max-width: 960px) {
