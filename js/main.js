@@ -15,7 +15,7 @@
   const menu = document.querySelector(".nav");
   const burgerOpen = document.querySelector(".burger");
   const menuClose = document.querySelector(".nav__close");
-
+  const menuLinks = document.querySelectorAll(".nav__link");
   burgerOpen.addEventListener("click", () => {
     menu.classList.add("nav-active");
   });
@@ -23,6 +23,14 @@
     // menu.classList.add("nav__close-active");
     menu.classList.remove("nav-active");
   });
+  // console.log(window.innerWidth);
+  if (window.innerWidth <= 769) {
+    for (let i = 0; i < menuLinks.length; i += 1) {
+      menuLinks[i].addEventListener("click", () => {
+        menu.classList.remove("nav-active");
+      });
+    }
+  }
 })();
 //
 
