@@ -9,6 +9,9 @@ body {
   line-height: 24px;
   color: #000000;
 }
+.main {
+  // counter-reset: h2;
+}
 
 .none {
   display: none !important;
@@ -41,6 +44,10 @@ body {
   font-size: 35px;
   line-height: 42px;
   color: var(--titleBlue);
+  // &::before {
+  //   content: "Section " counter(h2) ". ";
+  //   counter-increment: h2;
+  // }
 }
 .title3 {
   font-weight: 600;
