@@ -24,7 +24,7 @@
     menu.classList.remove("nav-active");
   });
   // console.log(window.innerWidth);
-  if (window.innerWidth <= 769) {
+  if (window.innerWidth <= 770) {
     for (let i = 0; i < menuLinks.length; i += 1) {
       menuLinks[i].addEventListener("click", () => {
         menu.classList.remove("nav-active");
