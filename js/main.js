@@ -16,6 +16,7 @@
   const burgerOpen = document.querySelector(".burger");
   const menuClose = document.querySelector(".nav__close");
   const menuLinks = document.querySelectorAll(".nav__link");
+
   burgerOpen.addEventListener("click", () => {
     menu.classList.add("nav-active");
   });
